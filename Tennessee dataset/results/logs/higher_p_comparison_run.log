@@ -1,0 +1,32 @@
+[fault 1] higher-p = 16 (latent_dim=16), Cl=26.957, cond=141.0
+[fault 4] higher-p = 4 (latent_dim=4), Cl=6.365, cond=1235.2
+[fault 6] higher-p = 4 (latent_dim=4), Cl=7.743, cond=756.8
+[fault 8] higher-p = 16 (latent_dim=16), Cl=31.073, cond=55.4
+[fault 3] higher-p = 4 (latent_dim=4), Cl=7.071, cond=801.5
+[fault 9] higher-p = 4 (latent_dim=4), Cl=7.196, cond=656.8
+[fault 15] higher-p = 4 (latent_dim=4), Cl=6.261, cond=562.5
+
+=== HIGHER-P AEO vs PCA SUMMARY (mean over 9 held-out runs) ===
+    fault_number        method  accuracy_mean  accuracy_std  far_mean  mdr_mean   f1_mean    f1_std  delay_mean  delay_std
+0              1  AEO-higher-p       0.992593      0.002175  0.006250  0.007639  0.995542  0.001308    5.555556   1.666667
+1              1           PCA       0.985648      0.003366  0.053472  0.006528  0.991410  0.002001    4.444444   2.242271
+2              3  AEO-higher-p       0.292477      0.034555  0.120833  0.824861  0.290192  0.059154   18.555556  19.761776
+3              3           PCA       0.346065      0.042834  0.199306  0.744861  0.391899  0.064061    6.000000   6.103278
+4              4  AEO-higher-p       0.664931      0.016271  0.154167  0.371250  0.757616  0.013585    1.222222   1.715938
+5              4           PCA       0.981019      0.006501  0.112500  0.000278  0.988749  0.003833    0.000000   0.000000
+6              6  AEO-higher-p       0.976157      0.006431  0.131250  0.002361  0.985873  0.003762    0.777778   1.201850
+7              6           PCA       0.976852      0.006374  0.112500  0.005278  0.986241  0.003760    2.888889   1.452966
+8              8  AEO-higher-p       0.950926      0.042837  0.001389  0.058611  0.969005  0.028142   30.555556  18.775723
+9              8           PCA       0.963889      0.014620  0.053472  0.032639  0.978013  0.009111   14.333333   9.987492
+10             9  AEO-higher-p       0.392708      0.049927  0.189583  0.690833  0.456046  0.071291    3.666667   3.968627
+11             9           PCA       0.347338      0.046111  0.199306  0.743333  0.393510  0.068456    6.555556   6.166667
+12            15  AEO-higher-p       0.374884      0.048296  0.249306  0.700278  0.441304  0.068515    1.666667   2.061553
+13            15           PCA       0.359838      0.044943  0.199306  0.728333  0.412005  0.065560    6.111111   6.030018
+[SAVED] D:\Shubham\IIT Bombay\Coding\Tennesse dataset\results\plots\p_full_latent\tep_accuracy_comparison_higher_p.png
+[SAVED] D:\Shubham\IIT Bombay\Coding\Tennesse dataset\results\plots\p_full_latent\tep_timeseries_fault1_higher_p.png
+[SAVED] D:\Shubham\IIT Bombay\Coding\Tennesse dataset\results\plots\p_full_latent\tep_timeseries_fault4_higher_p.png
+[SAVED] D:\Shubham\IIT Bombay\Coding\Tennesse dataset\results\plots\p_full_latent\tep_timeseries_fault6_higher_p.png
+[SAVED] D:\Shubham\IIT Bombay\Coding\Tennesse dataset\results\plots\p_full_latent\tep_timeseries_fault8_higher_p.png
+[SAVED] D:\Shubham\IIT Bombay\Coding\Tennesse dataset\results\plots\p_full_latent\tep_timeseries_fault3_higher_p.png
+[SAVED] D:\Shubham\IIT Bombay\Coding\Tennesse dataset\results\plots\p_full_latent\tep_timeseries_fault9_higher_p.png
+[SAVED] D:\Shubham\IIT Bombay\Coding\Tennesse dataset\results\plots\p_full_latent\tep_timeseries_fault15_higher_p.png

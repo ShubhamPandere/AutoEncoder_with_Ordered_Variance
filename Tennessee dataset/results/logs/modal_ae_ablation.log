@@ -1,0 +1,210 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/liochessmag/main/ap-lZVYOSUo4yHQGRk4VvcQBj
+✓ Created objects.
+├── 🔨 Created mount D:\Shubham\IIT Bombay\Coding\Tennesse 
+│   dataset\modal_tep_ae_ablation.py
+├── 🔨 Created mount D:\Shubham\IIT Bombay\Coding\Tennesse dataset
+├── 🔨 Created function run_shard.
+└── 🔨 Created function aggregate.
+AE ablation | trials=40/arm | arms=4 | shards=8
+[shard 1] AEO        trial   1   6.4s latent= 8 top1= 85.4%
+[shard 7] AEO        trial   7   5.7s latent= 8 top1= 95.1%
+[shard 2] AEO        trial   2   8.0s latent= 4 top1= 90.9%
+[shard 1] AEO        trial   9   2.1s latent= 4 top1= 85.3%
+[shard 3] AEO        trial   3   8.0s latent=16 top1= 23.4%
+[shard 4] AEO        trial   4   8.6s latent= 8 top1= 99.3%
+[shard 2] AEO        trial  10   3.4s latent= 8 top1= 77.2%
+[shard 5] AEO        trial   5  11.8s latent=16 top1= 28.2%
+[shard 7] AEO        trial  15   6.3s latent= 4 top1= 99.1%
+[shard 1] AEO        trial  17   7.1s latent= 4 top1= 92.2%
+[shard 4] AEO        trial  12   6.6s latent= 8 top1= 96.4%
+[shard 2] AEO        trial  18   6.3s latent=16 top1= 24.8%
+[shard 1] AEO        trial  25   1.8s latent= 4 top1= 85.5%
+[shard 4] AEO        trial  20   1.9s latent= 4 top1= 98.8%
+[shard 4] AEO        trial  28   1.9s latent= 4 top1= 89.4%[shard 7] AEO        trial  23   6.3s latent= 4 top1= 97.3%
+
+[shard 3] AEO        trial  11  11.7s latent= 8 top1= 96.4%
+[shard 1] AEO        trial  33   6.0s latent= 4 top1= 99.8%
+[shard 1] AE         trial   1   1.8s latent= 8 top1=  8.2%
+[shard 7] AEO        trial  31   7.3s latent=16 top1= 22.8%
+[shard 1] AE         trial   9   3.7s latent= 4 top1= 26.8%
+[shard 0] AEO        trial   0  30.7s latent=16 top1= 58.0%
+[shard 7] AEO        trial  39   3.4s latent= 4 top1= 99.4%
+[shard 1] AE         trial  17   1.7s latent= 4 top1= 39.7%
+[shard 7] AE         trial   7   3.8s latent= 4 top1= 20.8%
+[shard 4] AEO        trial  36  15.1s latent= 8 top1= 97.0%
+[shard 7] AE         trial  15   2.0s latent= 8 top1=  6.0%
+[shard 1] AE         trial  25   5.9s latent= 8 top1=  9.5%
+[shard 7] AE         trial  23   1.8s latent= 4 top1= 30.4%
+[shard 1] AE         trial  33   2.1s latent=16 top1=  4.4%
+[shard 7] AE         trial  31   3.6s latent=16 top1=  5.7%
+[shard 1] AE-sorted  trial   1   3.3s latent= 8 top1= 17.1%
+[shard 4] AE         trial   4   7.6s latent=16 top1=  5.6%
+[shard 0] AEO        trial   8  13.2s latent=16 top1= 93.7%
+[shard 4] AE         trial  12   1.8s latent= 4 top1= 44.3%
+[shard 7] AE         trial  39   3.3s latent= 8 top1=  8.1%
+[shard 7] AE-sorted  trial   7   1.8s latent= 8 top1= 19.2%
+[shard 1] AE-sorted  trial   9   7.0s latent= 4 top1= 35.8%
+[shard 4] AE         trial  20   6.8s latent=16 top1=  3.2%
+[shard 3] AEO        trial  19  31.9s latent=16 top1= 96.3%
+[shard 4] AE         trial  28   1.9s latent= 4 top1= 31.0%
+[shard 1] AE-sorted  trial  17   3.9s latent=16 top1= 11.0%
+[shard 7] AE-sorted  trial  15   7.4s latent= 4 top1= 32.3%
+[shard 3] AEO        trial  27   3.6s latent= 8 top1= 84.5%
+[shard 1] AE-sorted  trial  25   3.2s latent= 8 top1= 28.6%
+[shard 4] AE         trial  36   3.5s latent= 4 top1= 31.0%
+[shard 2] AEO        trial  26  40.4s latent=16 top1= 62.5%[shard 7] AE-sorted  trial  23   3.9s latent= 8 top1= 19.9%
+
+[shard 4] AE-sorted  trial   4   1.7s latent= 4 top1= 31.2%
+[shard 3] AEO        trial  35   2.1s latent= 4 top1= 97.0%
+[shard 6] AEO        trial   6  57.7s latent=16 top1= 91.9%
+[shard 1] AE-sorted  trial  33   3.6s latent= 4 top1= 32.6%
+[shard 2] AEO        trial  34   2.9s latent= 8 top1= 63.0%
+[shard 4] AE-sorted  trial  12   3.3s latent= 4 top1= 37.6%[shard 3] AE         trial   3   3.2s latent= 4 top1= 44.9%
+
+[shard 1] AE+wd      trial   1   2.0s latent= 4 top1= 37.1%
+[shard 4] AE-sorted  trial  20   1.8s latent= 4 top1= 38.2%
+[shard 2] AE         trial   2   2.6s latent= 4 top1= 40.3%[shard 0] AEO        trial  16  19.9s latent=16 top1= 89.0%
+
+[shard 7] AE-sorted  trial  31   7.1s latent= 4 top1= 29.4%
+[shard 0] AEO        trial  24   1.9s latent= 8 top1= 71.8%
+[shard 1] AE+wd      trial   9   3.6s latent= 4 top1= 41.6%
+[shard 6] AEO        trial  14   6.6s latent= 8 top1= 80.8%
+[shard 4] AE-sorted  trial  28   3.9s latent= 8 top1= 21.3%
+[shard 3] AE         trial  11   6.0s latent= 8 top1= 10.5%
+[shard 1] AE+wd      trial  17   2.0s latent= 8 top1= 19.9%
+[shard 2] AE         trial  10   5.2s latent=16 top1=  2.7%
+[shard 4] AE-sorted  trial  36   1.7s latent= 4 top1= 33.8%[shard 0] AEO        trial  32   3.4s latent= 8 top1= 88.4%
+
+[shard 6] AEO        trial  22   3.4s latent= 4 top1= 91.1%
+[shard 4] AE+wd      trial   4   1.7s latent= 8 top1= 23.0%
+[shard 3] AE         trial  19   3.6s latent=16 top1=  4.4%[shard 7] AE-sorted  trial  39   6.0s latent=16 top1= 12.1%[shard 6] AEO        trial  30   1.8s latent= 4 top1= 90.9%
+
+
+[shard 3] AE         trial  27   2.1s latent= 8 top1=  7.6%
+[shard 1] AE+wd      trial  25   6.2s latent=16 top1= 11.2%
+[shard 7] AE+wd      trial   7   3.0s latent= 4 top1= 42.0%
+[shard 4] AE+wd      trial  12   4.1s latent= 8 top1= 20.9%[shard 0] AE         trial   0   6.0s latent= 4 top1= 38.1%[shard 2] AE         trial  18   6.2s latent=16 top1=  8.7%
+
+[shard 7] AE+wd      trial  15   1.8s latent= 4 top1= 38.4%
+
+[shard 3] AE         trial  35   3.6s latent=16 top1=  4.3%
+[shard 4] AE+wd      trial  20   3.4s latent= 8 top1= 21.2%[shard 2] AE         trial  26   3.3s latent= 8 top1=  8.4%
+
+[shard 5] AEO        trial  13  66.1s latent=16 top1= 94.3%
+[shard 1] AE+wd      trial  33   6.1s latent= 4 top1= 37.5%
+[shard 3] AE-sorted  trial   3   3.1s latent=16 top1= 14.8%
+[shard 3] AE-sorted  trial  11   1.6s latent= 4 top1= 39.4%
+[shard 4] AE+wd      trial  28   3.8s latent=16 top1=  9.6%
+[shard 0] AE         trial   8   7.0s latent= 8 top1=  7.9%
+[shard 7] AE+wd      trial  23   6.4s latent=16 top1= 11.0%
+[shard 6] AEO        trial  38  11.8s latent=16 top1= 46.0%
+[shard 3] AE-sorted  trial  19   1.9s latent=16 top1= 14.3%
+[shard 7] AE+wd      trial  31   1.9s latent=16 top1= 12.9%[shard 2] AE         trial  34   6.0s latent= 4 top1= 25.0%
+[shard 1] 12800 rows -> /data/all20/ablation/ablation_shard1.csv
+
+[shard 4] AE+wd      trial  36   3.4s latent= 8 top1= 18.2%
+[shard 3] AE-sorted  trial  27   1.7s latent= 4 top1= 32.6%
+[shard 5] AEO        trial  21   6.4s latent= 8 top1= 64.9%
+[shard 6] AE         trial   6   3.1s latent= 4 top1= 53.8%
+[shard 2] AE-sorted  trial   2   2.6s latent= 8 top1= 29.8%
+[shard 3] AE-sorted  trial  35   1.8s latent= 8 top1= 17.6%
+[shard 7] AE+wd      trial  39   3.1s latent= 8 top1= 15.8%
+[shard 0] AE         trial  16   6.2s latent= 8 top1=  6.9%
+[shard 4] 12800 rows -> /data/all20/ablation/ablation_shard4.csv
+[shard 7] 12800 rows -> /data/all20/ablation/ablation_shard7.csv
+[shard 6] AE         trial  14   3.2s latent= 4 top1= 39.8%
+[shard 2] AE-sorted  trial  10   2.7s latent= 4 top1= 37.7%
+[shard 0] AE         trial  24   3.0s latent= 4 top1= 44.7%
+[shard 6] AE         trial  22   1.9s latent= 8 top1=  8.1%
+[shard 5] AEO        trial  29   7.1s latent= 4 top1= 98.7%
+[shard 3] AE+wd      trial   3   7.1s latent=16 top1=  8.8%
+[shard 2] AE-sorted  trial  18   5.2s latent= 4 top1= 39.1%
+[shard 3] AE+wd      trial  11   3.7s latent= 4 top1= 40.9%
+[shard 0] AE         trial  32   7.0s latent= 8 top1=  7.5%
+[shard 6] AE         trial  30   7.4s latent= 8 top1=  6.7%
+[shard 0] AE-sorted  trial   0   1.7s latent= 4 top1= 39.5%[shard 2] AE-sorted  trial  26   5.0s latent= 8 top1= 25.6%
+
+[shard 3] AE+wd      trial  19   6.3s latent=16 top1= 13.7%
+[shard 2] AE-sorted  trial  34   5.0s latent= 8 top1= 30.9%
+[shard 6] AE         trial  38   6.5s latent= 4 top1= 31.0%
+[shard 0] AE-sorted  trial   8   5.9s latent= 4 top1= 38.7%
+[shard 6] AE-sorted  trial   6   1.9s latent=16 top1= 11.6%[shard 3] AE+wd      trial  27   3.1s latent= 8 top1= 21.0%
+
+[shard 0] AE-sorted  trial  16   2.0s latent=16 top1=  8.9%[shard 2] AE+wd      trial   2   3.1s latent= 4 top1= 38.6%
+
+[shard 6] AE-sorted  trial  14   3.1s latent= 4 top1= 30.7%
+[shard 0] AE-sorted  trial  24   3.0s latent= 8 top1= 27.8%
+[shard 0] AE-sorted  trial  32   1.9s latent= 4 top1= 39.0%
+[shard 3] AE+wd      trial  35   6.0s latent=16 top1= 15.7%[shard 2] AE+wd      trial  10   5.3s latent=16 top1= 13.3%
+
+[shard 6] AE-sorted  trial  22   3.4s latent= 8 top1= 15.8%
+[shard 0] AE+wd      trial   0   1.8s latent=16 top1= 13.1%
+[shard 3] 12800 rows -> /data/all20/ablation/ablation_shard3.csv
+[shard 5] AEO        trial  37  22.6s latent=16 top1= 75.8%
+[shard 2] AE+wd      trial  18   2.6s latent= 8 top1= 23.8%
+[shard 6] AE-sorted  trial  30   3.4s latent= 4 top1= 38.2%
+[shard 2] AE+wd      trial  26   2.6s latent= 8 top1= 19.0%
+[shard 2] AE+wd      trial  34   1.8s latent=16 top1=  8.4%
+[shard 0] AE+wd      trial   8   6.8s latent=16 top1=  8.3%
+[shard 5] AE         trial   5   6.3s latent= 4 top1= 32.7%
+[shard 2] 12800 rows -> /data/all20/ablation/ablation_shard2.csv
+[shard 5] AE         trial  13   2.1s latent= 8 top1=  8.6%[shard 6] AE-sorted  trial  38   6.4s latent= 4 top1= 41.3%
+
+[shard 0] AE+wd      trial  16   3.6s latent= 8 top1= 22.3%
+[shard 6] AE+wd      trial   6   3.3s latent=16 top1= 11.3%
+[shard 0] AE+wd      trial  24   3.6s latent= 8 top1= 23.6%
+[shard 6] AE+wd      trial  14   1.9s latent=16 top1= 12.8%
+[shard 5] AE         trial  21   6.4s latent=16 top1=  4.8%[shard 0] AE+wd      trial  32   1.7s latent= 8 top1= 18.1%
+
+[shard 6] AE+wd      trial  22   2.2s latent=16 top1=  9.4%
+[shard 5] AE         trial  29   2.2s latent= 8 top1=  8.6%
+  shard done: {'shard': 0, 'rows': 12800}
+  shard done: {'shard': 1, 'rows': 12800}
+  shard done: {'shard': 2, 'rows': 12800}
+  shard done: {'shard': 3, 'rows': 12800}
+  shard done: {'shard': 4, 'rows': 12800}
+[shard 0] 12800 rows -> /data/all20/ablation/ablation_shard0.csv
+[shard 6] AE+wd      trial  30   7.5s latent= 8 top1= 24.2%
+[shard 5] AE         trial  37   6.4s latent=16 top1=  4.3%
+[shard 6] AE+wd      trial  38   6.0s latent= 4 top1= 44.6%
+[shard 5] AE-sorted  trial   5   6.2s latent= 8 top1= 25.9%
+[shard 5] AE-sorted  trial  13   1.7s latent= 4 top1= 40.3%
+[shard 6] 12800 rows -> /data/all20/ablation/ablation_shard6.csv
+[shard 5] AE-sorted  trial  21   2.0s latent=16 top1=  9.7%
+[shard 5] AE-sorted  trial  29   6.9s latent= 4 top1= 33.2%
+[shard 5] AE-sorted  trial  37   3.3s latent=16 top1= 12.6%
+[shard 5] AE+wd      trial   5   7.0s latent=16 top1=  9.8%
+[shard 5] AE+wd      trial  13   1.7s latent= 4 top1= 36.9%
+[shard 5] AE+wd      trial  21   6.9s latent= 4 top1= 37.2%
+[shard 5] AE+wd      trial  29   1.6s latent= 4 top1= 41.1%
+[shard 5] AE+wd      trial  37   2.0s latent= 4 top1= 38.0%
+[shard 5] 12800 rows -> /data/all20/ablation/ablation_shard5.csv
+  shard done: {'shard': 5, 'rows': 12800}
+  shard done: {'shard': 6, 'rows': 12800}
+  shard done: {'shard': 7, 'rows': 12800}
+
+Aggregating ...
+
+=== MEAN MDR over the 17 detectable faults ===
+
+-- T2 --
+p_request      2      4      8   full
+arm                                  
+AE         0.454  0.414  0.390  0.363
+AE+wd      0.454  0.405  0.384  0.357
+AE-sorted  0.447  0.392  0.375  0.358
+AEO        0.432  0.395  0.320  0.277
+
+-- T2+SPE --
+p_request      2      4      8   full
+arm                                  
+AE         0.283  0.270  0.268  0.271
+AE+wd      0.281  0.276  0.271  0.270
+AE-sorted  0.277  0.286  0.284  0.275
+AEO        0.264  0.261  0.228  0.211
+
+Pull with: modal volume get tep-data all20/ablation <local_dir>
+✓ App completed. View run at 
+https://modal.com/apps/liochessmag/main/ap-lZVYOSUo4yHQGRk4VvcQBj

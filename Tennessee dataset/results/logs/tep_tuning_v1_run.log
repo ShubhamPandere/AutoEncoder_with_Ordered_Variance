@@ -1,0 +1,59 @@
+
+=== Tuning fault 1 ===
+  AEO best config: {'latent_dim': 16, 'loss_alpha': 1.6540610077468225, 'beta': 0.7990072682569841, 'gamma': 0.09792650049457703, 'lr': 0.0014205871889177604, 'alpha': 0.0354679224769613, 'epochs': 2000, 'verbose': False}  (tuning took 232.7s)
+  PCA best config: {'Vpc': 95, 'alpha': 0.1}
+
+=== Tuning fault 4 ===
+  AEO best config: {'latent_dim': 16, 'loss_alpha': 3.3066542244503254, 'beta': 0.21580142533682706, 'gamma': 0.26277422951442037, 'lr': 0.0017494897610370896, 'alpha': 0.1814208651460378, 'epochs': 2000, 'verbose': False}  (tuning took 191.9s)
+  PCA best config: {'Vpc': 99, 'alpha': 0.05}
+
+=== Tuning fault 6 ===
+  AEO best config: {'latent_dim': 16, 'loss_alpha': 0.5185960551967008, 'beta': 0.707988639977997, 'gamma': 0.24193320545017288, 'lr': 0.004705382625930077, 'alpha': 0.03862618458761967, 'epochs': 2000, 'verbose': False}  (tuning took 197.6s)
+  PCA best config: {'Vpc': 99, 'alpha': 0.05}
+
+=== Tuning fault 8 ===
+  AEO best config: {'latent_dim': 16, 'loss_alpha': 1.496172231287844, 'beta': 0.0659429497082282, 'gamma': 0.06265064183519155, 'lr': 0.0012406194500986939, 'alpha': 0.0847290349164016, 'epochs': 2000, 'verbose': False}  (tuning took 196.0s)
+  PCA best config: {'Vpc': 95, 'alpha': 0.1}
+
+=== Tuning fault 3 ===
+  AEO best config: {'latent_dim': 4, 'loss_alpha': 1.0914555896448017, 'beta': 0.9661398348495657, 'gamma': 0.190870891150784, 'lr': 0.0020223382326432365, 'alpha': 0.19440616499519853, 'epochs': 2000, 'verbose': False}  (tuning took 93.2s)
+  PCA best config: {'Vpc': 99, 'alpha': 0.1}
+
+=== Tuning fault 9 ===
+  AEO best config: {'latent_dim': 16, 'loss_alpha': 2.608907587967204, 'beta': 0.8013844070053219, 'gamma': 0.1856587110091752, 'lr': 0.0018657820347829767, 'alpha': 0.161043515830212, 'epochs': 2000, 'verbose': False}  (tuning took 259.3s)
+  PCA best config: {'Vpc': 99, 'alpha': 0.1}
+
+=== Tuning fault 15 ===
+  AEO best config: {'latent_dim': 8, 'loss_alpha': 3.210811042396852, 'beta': 0.8753637934809447, 'gamma': 0.17413806140825447, 'lr': 0.0010926581052744947, 'alpha': 0.17233374054367298, 'epochs': 2000, 'verbose': False}  (tuning took 155.4s)
+  PCA best config: {'Vpc': 99, 'alpha': 0.1}
+DONE
+    fault_number method  latent_dim  loss_alpha      beta     gamma        lr     alpha  epochs verbose   Vpc
+0              1    AEO        16.0    1.654061  0.799007  0.097927  0.001421  0.035468  2000.0   False   NaN
+1              1    PCA         NaN         NaN       NaN       NaN       NaN  0.100000     NaN     NaN  95.0
+2              4    AEO        16.0    3.306654  0.215801  0.262774  0.001749  0.181421  2000.0   False   NaN
+3              4    PCA         NaN         NaN       NaN       NaN       NaN  0.050000     NaN     NaN  99.0
+4              6    AEO        16.0    0.518596  0.707989  0.241933  0.004705  0.038626  2000.0   False   NaN
+5              6    PCA         NaN         NaN       NaN       NaN       NaN  0.050000     NaN     NaN  99.0
+6              8    AEO        16.0    1.496172  0.065943  0.062651  0.001241  0.084729  2000.0   False   NaN
+7              8    PCA         NaN         NaN       NaN       NaN       NaN  0.100000     NaN     NaN  95.0
+8              3    AEO         4.0    1.091456  0.966140  0.190871  0.002022  0.194406  2000.0   False   NaN
+9              3    PCA         NaN         NaN       NaN       NaN       NaN  0.100000     NaN     NaN  99.0
+10             9    AEO        16.0    2.608908  0.801384  0.185659  0.001866  0.161044  2000.0   False   NaN
+11             9    PCA         NaN         NaN       NaN       NaN       NaN  0.100000     NaN     NaN  99.0
+12            15    AEO         8.0    3.210811  0.875364  0.174138  0.001093  0.172334  2000.0   False   NaN
+13            15    PCA         NaN         NaN       NaN       NaN       NaN  0.100000     NaN     NaN  99.0
+    fault_number     method  accuracy_mean  accuracy_std  far_mean   far_std  mdr_mean   mdr_std   f1_mean    f1_std  delay_mean  delay_std
+0              1  AEO-tuned       0.985937      0.003683  0.006250  0.008839  0.015625  0.002652  0.991501  0.002229         8.0   0.000000
+1              1  PCA-tuned       0.983854      0.003683  0.062500  0.017678  0.006875  0.000884  0.990341  0.002191         4.5   2.121320
+2              3  AEO-tuned       0.268229      0.031672  0.075000  0.070711  0.863125  0.052149  0.235440  0.076997         8.0  11.313708
+3              3  PCA-tuned       0.287500      0.038302  0.225000  0.053033  0.810000  0.056569  0.305653  0.074984         8.0   2.828427
+4              4  AEO-tuned       0.413542      0.016205  0.034375  0.004419  0.696875  0.020329  0.462596  0.023546         0.0   0.000000
+5              4  PCA-tuned       0.978646      0.003683  0.128125  0.022097  0.000000  0.000000  0.987352  0.002154         0.0   0.000000
+6              6  AEO-tuned       0.998958      0.001473  0.006250  0.008839  0.000000  0.000000  0.999376  0.000883         0.0   0.000000
+7              6  PCA-tuned       0.972396      0.003683  0.128125  0.022097  0.007500  0.000000  0.983589  0.002154         4.0   1.414214
+8              8  AEO-tuned       0.961979      0.027253  0.025000  0.000000  0.040625  0.032704  0.976632  0.017037        21.5  14.849242
+9              8  PCA-tuned       0.968229      0.013995  0.062500  0.017678  0.025625  0.020329  0.980759  0.008683        19.0  18.384776
+10             9  AEO-tuned       0.212500      0.027990  0.059375  0.004419  0.933125  0.032704  0.123145  0.057000        17.5  24.748737
+11             9  PCA-tuned       0.281771      0.033146  0.225000  0.053033  0.816875  0.050381  0.296547  0.067320        10.0   0.000000
+12            15  AEO-tuned       0.248437      0.012522  0.115625  0.101647  0.878750  0.035355  0.210652  0.051540         7.5  10.606602
+13            15  PCA-tuned       0.298958      0.038302  0.225000  0.053033  0.796250  0.056569  0.324359  0.073152         8.0   2.828427

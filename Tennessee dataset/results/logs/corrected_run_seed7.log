@@ -1,0 +1,104 @@
+Corrected TEP pipeline | faults=[1, 3, 4, 6, 8, 9, 15] | trials=60 | model_seed=7
+Splits: {"train_run": 1, "calib_runs": [2, 3, 4], "far_runs": [5, 6, 7, 8, 9, 10], "tune_runs": [1, 2, 3], "val_runs": [4, 5, 6, 7, 8, 9, 10], "window_size": 480, "onset": 160, "target_far": 0.01, "consec_k": 3}
+
+PCA grid ...
+  [PCA Vpc=80] Np=22 cond=10.5
+  [PCA Vpc=85] Np=25 cond=12.3
+  [PCA Vpc=90] Np=29 cond=15.1
+  [PCA Vpc=95] Np=34 cond=20.8
+  [PCA Vpc=99] Np=40 cond=30.8
+
+AEO random search (60 trials, trained once each and scored on all 7 faults) ...
+  [AEO trial 1/60]  46.8s latent=16 hid=32 ep=2000 Q=line conv=True top1= 82.4% best_T2SPE_score=-0.000
+  [AEO trial 2/60]  10.2s latent= 8 hid=32 ep=4000 Q=geom conv=True top1= 79.1% best_T2SPE_score=-0.000
+  [AEO trial 3/60]   9.9s latent= 8 hid=64 ep=2000 Q=line conv=True top1= 86.2% best_T2SPE_score=-0.000
+  [AEO trial 4/60]   5.0s latent= 4 hid=16 ep=2000 Q=quad conv=True top1= 96.1% best_T2SPE_score=-0.000
+  [AEO trial 5/60]   9.2s latent= 4 hid=32 ep=4000 Q=quad conv=True top1= 93.3% best_T2SPE_score=-0.000
+  [AEO trial 6/60]  53.7s latent=16 hid=64 ep=4000 Q=quad conv=True top1= 93.9% best_T2SPE_score=-0.000
+  [AEO trial 7/60]  10.0s latent= 8 hid=32 ep=4000 Q=geom conv=True top1= 71.3% best_T2SPE_score=-0.000
+  [AEO trial 8/60]  25.0s latent=16 hid=32 ep=2000 Q=quad conv=True top1= 81.1% best_T2SPE_score=-0.000
+  [AEO trial 9/60]   5.1s latent= 4 hid=16 ep=2000 Q=geom conv=True top1= 74.7% best_T2SPE_score=-0.000
+  [AEO trial 10/60]  50.3s latent=16 hid=32 ep=2000 Q=line conv=False top1= 95.9% best_T2SPE_score=-0.000
+  [AEO trial 11/60]  26.2s latent= 8 hid=32 ep=4000 Q=line conv=True top1= 99.2% best_T2SPE_score=-0.000
+  [AEO trial 12/60]  11.0s latent=16 hid=16 ep=4000 Q=geom conv=True top1= 22.4% best_T2SPE_score=-0.000
+  [AEO trial 13/60]   2.9s latent= 8 hid=32 ep=2000 Q=geom conv=True top1= 83.5% best_T2SPE_score=-0.000
+  [AEO trial 14/60]   3.3s latent= 8 hid=64 ep=1000 Q=quad conv=True top1= 74.0% best_T2SPE_score=-0.000
+  [AEO trial 15/60]   1.5s latent= 4 hid=32 ep=1000 Q=geom conv=True top1= 92.2% best_T2SPE_score=-0.000
+  [AEO trial 16/60]  18.4s latent=16 hid=64 ep=4000 Q=geom conv=True top1= 32.8% best_T2SPE_score=-0.000
+  [AEO trial 17/60]   2.8s latent= 8 hid=16 ep=2000 Q=geom conv=True top1= 51.2% best_T2SPE_score=-0.000
+  [AEO trial 18/60]   3.0s latent=16 hid=64 ep=1000 Q=geom conv=True top1= 36.0% best_T2SPE_score=-0.000
+  [AEO trial 19/60]  16.3s latent=16 hid=16 ep=4000 Q=geom conv=True top1= 27.6% best_T2SPE_score=-0.000
+  [AEO trial 20/60]   1.5s latent= 4 hid=64 ep=1000 Q=quad conv=True top1= 44.7% best_T2SPE_score=-0.000
+  [AEO trial 21/60]   1.4s latent= 8 hid=32 ep=1000 Q=quad conv=True top1= 70.2% best_T2SPE_score=-0.000
+  [AEO trial 22/60]   1.5s latent= 4 hid=64 ep=1000 Q=line conv=True top1= 94.1% best_T2SPE_score=-0.001
+  [AEO trial 23/60]   7.7s latent=16 hid=64 ep=1000 Q=quad conv=True top1= 80.6% best_T2SPE_score=-0.000
+  [AEO trial 24/60]  15.2s latent=16 hid=64 ep=2000 Q=quad conv=True top1= 85.6% best_T2SPE_score=-0.000
+  [AEO trial 25/60]   2.8s latent=16 hid=32 ep=1000 Q=geom conv=True top1= 23.4% best_T2SPE_score=-0.000
+  [AEO trial 26/60]   1.3s latent= 4 hid=16 ep=1000 Q=quad conv=True top1= 95.3% best_T2SPE_score=-0.000
+  [AEO trial 27/60]  12.3s latent= 8 hid=64 ep=4000 Q=line conv=True top1= 80.1% best_T2SPE_score=-0.000
+  [AEO trial 28/60]   2.9s latent= 4 hid=32 ep=2000 Q=geom conv=True top1= 85.4% best_T2SPE_score=-0.004
+  [AEO trial 29/60]   1.6s latent= 8 hid=64 ep=1000 Q=quad conv=True top1= 80.6% best_T2SPE_score=-0.000
+  [AEO trial 30/60]   1.5s latent= 4 hid=64 ep=1000 Q=geom conv=True top1= 90.1% best_T2SPE_score=-0.001
+  [AEO trial 31/60]  27.1s latent= 8 hid=64 ep=4000 Q=line conv=True top1= 98.8% best_T2SPE_score=-0.000
+  [AEO trial 32/60]  40.8s latent=16 hid=32 ep=4000 Q=geom conv=True top1= 23.8% best_T2SPE_score=-0.000
+  [AEO trial 33/60]   7.7s latent=16 hid=32 ep=1000 Q=line conv=True top1= 81.7% best_T2SPE_score=-0.000
+  [AEO trial 34/60]  32.7s latent=16 hid=64 ep=2000 Q=quad conv=True top1= 77.1% best_T2SPE_score=-0.000
+  [AEO trial 35/60]   9.9s latent= 8 hid=32 ep=4000 Q=quad conv=True top1= 66.2% best_T2SPE_score=-0.000
+  [AEO trial 36/60]   9.7s latent= 4 hid=16 ep=4000 Q=quad conv=True top1= 98.1% best_T2SPE_score=-0.000
+  [AEO trial 37/60]  12.8s latent=16 hid=64 ep=1000 Q=quad conv=True top1= 78.7% best_T2SPE_score=-0.000
+  [AEO trial 38/60]   2.6s latent= 8 hid=16 ep=1000 Q=line conv=True top1= 59.3% best_T2SPE_score=-0.000
+  [AEO trial 39/60]  12.0s latent= 4 hid=64 ep=2000 Q=line conv=True top1= 96.1% best_T2SPE_score=-0.020
+  [AEO trial 40/60]   2.7s latent= 4 hid=16 ep=1000 Q=quad conv=True top1= 97.3% best_T2SPE_score=-0.000
+  [AEO trial 41/60]   2.7s latent= 8 hid=16 ep=1000 Q=geom conv=True top1= 50.5% best_T2SPE_score=-0.000
+  [AEO trial 42/60]  15.2s latent=16 hid=32 ep=2000 Q=geom conv=True top1= 39.5% best_T2SPE_score=-0.000
+  [AEO trial 43/60]  16.2s latent=16 hid=64 ep=2000 Q=geom conv=True top1= 33.3% best_T2SPE_score=-0.000
+  [AEO trial 44/60]   8.2s latent=16 hid=64 ep=1000 Q=geom conv=True top1= 33.0% best_T2SPE_score=-0.000
+  [AEO trial 45/60]  10.2s latent= 8 hid=32 ep=4000 Q=quad conv=True top1= 75.4% best_T2SPE_score=-0.000
+  [AEO trial 46/60]   2.9s latent= 8 hid=64 ep=1000 Q=geom conv=True top1= 75.2% best_T2SPE_score=-0.000
+  [AEO trial 47/60]   2.9s latent= 4 hid=64 ep=1000 Q=quad conv=True top1= 88.8% best_T2SPE_score=-0.004
+  [AEO trial 48/60]   2.7s latent= 8 hid=64 ep=1000 Q=quad conv=True top1= 75.0% best_T2SPE_score=-0.000
+  [AEO trial 49/60]  10.0s latent= 8 hid=32 ep=4000 Q=line conv=True top1= 90.5% best_T2SPE_score=-0.000
+  [AEO trial 50/60]   2.6s latent= 8 hid=32 ep=1000 Q=quad conv=True top1= 92.4% best_T2SPE_score=-0.000
+  [AEO trial 51/60]  11.5s latent= 8 hid=64 ep=2000 Q=quad conv=True top1= 96.3% best_T2SPE_score=-0.000
+  [AEO trial 52/60]  19.5s latent=16 hid=32 ep=1000 Q=geom conv=True top1= 22.3% best_T2SPE_score=-0.000
+  [AEO trial 53/60]  31.3s latent=16 hid=64 ep=4000 Q=quad conv=True top1= 70.0% best_T2SPE_score=-0.000
+  [AEO trial 54/60]  38.5s latent=16 hid=16 ep=4000 Q=geom conv=True top1= 25.8% best_T2SPE_score=-0.000
+  [AEO trial 55/60]   2.1s latent= 4 hid=64 ep=1000 Q=line conv=True top1= 95.4% best_T2SPE_score=-0.000
+  [AEO trial 56/60]   7.9s latent= 8 hid=64 ep=2000 Q=line conv=True top1= 82.2% best_T2SPE_score=-0.000
+  [AEO trial 57/60]   2.2s latent= 4 hid=64 ep=1000 Q=quad conv=True top1= 91.5% best_T2SPE_score=-0.001
+  [AEO trial 58/60]  32.3s latent= 8 hid=64 ep=4000 Q=quad conv=True top1= 72.0% best_T2SPE_score=-0.000
+  [AEO trial 59/60]   5.1s latent= 8 hid=32 ep=2000 Q=geom conv=True top1= 55.9% best_T2SPE_score=-0.000
+  [AEO trial 60/60]  24.3s latent=16 hid=16 ep=1000 Q=line conv=False top1= 89.7% best_T2SPE_score=-0.000
+
+=== CORRECTED COMPARISON (matched FAR, held-out runs) ===
+ fault_number          variant      far      mdr  delay_samples  detection_rate  balanced_accuracy  legacy_f1
+            1           AEO-T2 0.010069 0.006786       6.000000        1.000000           0.991572   0.995590
+            1       AEO-T2+SPE 0.010069 0.005893       4.714286        1.000000           0.992019   0.996039
+            1 PCA-T2 (Vpc<=95) 0.010069 0.007857       6.428571        1.000000           0.991037   0.995050
+            1       PCA-T2+SPE 0.010069 0.001964       1.571429        1.000000           0.993983   0.998011
+            3           AEO-T2 0.010069 0.989643     264.000000        0.142857           0.500144   0.020461
+            3       AEO-T2+SPE 0.010069 0.988393     264.000000        0.142857           0.500769   0.022902
+            3 PCA-T2 (Vpc<=95) 0.010069 0.988929     248.500000        0.285714           0.500501   0.021857
+            3       PCA-T2+SPE 0.010069 0.987500     322.500000        0.285714           0.501215   0.024642
+            4           AEO-T2 0.010069 0.613929      18.285714        1.000000           0.688001   0.556265
+            4       AEO-T2+SPE 0.010069 0.032321       0.857143        1.000000           0.978805   0.982568
+            4 PCA-T2 (Vpc<=95) 0.010069 0.493750      11.142857        1.000000           0.748090   0.671302
+            4       PCA-T2+SPE 0.010069 0.001607       0.571429        1.000000           0.994162   0.998190
+            6           AEO-T2 0.010069 0.000000       0.000000        1.000000           0.994965   0.998994
+            6       AEO-T2+SPE 0.010069 0.000000       0.000000        1.000000           0.994965   0.998994
+            6 PCA-T2 (Vpc<=95) 0.010069 0.009107       7.428571        1.000000           0.990412   0.994420
+            6       PCA-T2+SPE 0.010069 0.000000       0.000000        1.000000           0.994965   0.998994
+            8           AEO-T2 0.010069 0.058036      33.285714        1.000000           0.965947   0.969110
+            8       AEO-T2+SPE 0.010069 0.043214      30.142857        1.000000           0.973358   0.976910
+            8 PCA-T2 (Vpc<=95) 0.010069 0.039821      30.571429        1.000000           0.975055   0.978679
+            8       PCA-T2+SPE 0.010069 0.033750      24.714286        1.000000           0.978090   0.981830
+            9           AEO-T2 0.010069 0.987857     257.000000        0.142857           0.501037   0.023947
+            9       AEO-T2+SPE 0.010069 0.987143     172.000000        0.285714           0.501394   0.025337
+            9 PCA-T2 (Vpc<=95) 0.010069 0.989821            NaN        0.000000           0.500055   0.020112
+            9       PCA-T2+SPE 0.010069 0.988036      66.000000        0.142857           0.500947   0.023599
+           15           AEO-T2 0.010069 0.987679     221.000000        0.285714           0.501126   0.024295
+           15       AEO-T2+SPE 0.010069 0.984107     377.333333        0.428571           0.502912   0.031227
+           15 PCA-T2 (Vpc<=95) 0.010069 0.986786     337.000000        0.142857           0.501572   0.026032
+           15       PCA-T2+SPE 0.010069 0.985536      66.000000        0.142857           0.502197   0.028460
+
+[SAVED] D:\Shubham\IIT Bombay\Coding\Tennesse dataset\results\tables\corrected

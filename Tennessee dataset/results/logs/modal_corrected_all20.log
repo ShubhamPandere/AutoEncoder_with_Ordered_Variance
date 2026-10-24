@@ -1,0 +1,257 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/liochessmag/main/ap-P8ZhtWFtBSe9zzdlL3ifVT
+✓ Created objects.
+├── 🔨 Created mount D:\Shubham\IIT Bombay\Coding\Tennesse 
+│   dataset\modal_tep_corrected_all20.py
+├── 🔨 Created mount D:\Shubham\IIT Bombay\Coding\Tennesse dataset
+├── 🔨 Created function run_pca_all20.
+├── 🔨 Created function run_aeo_shard.
+└── 🔨 Created function aggregate.
+Corrected all-20 run | trials=60 shards=8 model_seed=42
+
+Step 1/3: PCA grid ...
+  [PCA Vpc=80] Np=22 cond=10.5
+  [PCA Vpc=85] Np=25 cond=12.3
+  [PCA Vpc=90] Np=29 cond=15.1
+  [PCA Vpc=95] Np=34 cond=20.8
+  [PCA Vpc=99] Np=40 cond=30.8
+
+Step 2/3: AEO search across 8 shards (max 8 containers) ...
+[PCA] 1200 rows -> /data/all20/corrected/pca_trials.csv
+[shard 3/8] 8 configs: trials [3, 11, 19, 27, 35, 43, 51, 59]
+[shard 0/8] 8 configs: trials [0, 8, 16, 24, 32, 40, 48, 56]
+[shard 1/8] 8 configs: trials [1, 9, 17, 25, 33, 41, 49, 57]
+[shard 2/8] 8 configs: trials [2, 10, 18, 26, 34, 42, 50, 58][shard 4/8] 7 configs: trials [4, 12, 20, 28, 36, 44, 52]
+
+[shard 5/8] 7 configs: trials [5, 13, 21, 29, 37, 45, 53]
+[shard 6/8] 7 configs: trials [6, 14, 22, 30, 38, 46, 54]
+[shard 7/8] 7 configs: trials [7, 15, 23, 31, 39, 47, 55]
+  [AEO trial 4/1]   3.4s latent= 4 hid=16 ep=2000 Q=quad conv=True top1= 97.0% best_T2SPE_score=-0.000
+[shard 3] done 1/8 (trial 3)
+  [AEO trial 2/1]   7.5s latent= 8 hid=32 ep=4000 Q=geom conv=True top1= 63.4% best_T2SPE_score=-0.000
+[shard 1] done 1/8 (trial 1)
+  [AEO trial 5/1]   7.0s latent= 4 hid=32 ep=4000 Q=quad conv=True top1= 96.3% best_T2SPE_score=-0.004
+[shard 4] done 1/7 (trial 4)
+  [AEO trial 3/1]   9.1s latent= 8 hid=64 ep=2000 Q=line conv=True top1= 75.0% best_T2SPE_score=-0.001  [AEO trial 12/1]   6.9s latent=16 hid=16 ep=4000 Q=geom conv=True top1= 20.3% best_T2SPE_score=-0.000
+
+[shard 2] done 1/8 (trial 2)
+[shard 3] done 2/8 (trial 11)
+  [AEO trial 13/1]   2.5s latent= 8 hid=32 ep=2000 Q=geom conv=True top1= 54.9% best_T2SPE_score=-0.000
+[shard 4] done 2/7 (trial 12)
+  [AEO trial 7/1]   8.7s latent= 8 hid=32 ep=4000 Q=geom conv=True top1= 46.2% best_T2SPE_score=-0.000
+[shard 6] done 1/7 (trial 6)
+  [AEO trial 21/1]   1.3s latent= 8 hid=32 ep=1000 Q=quad conv=True top1= 46.4% best_T2SPE_score=-0.000
+[shard 4] done 3/7 (trial 20)
+  [AEO trial 20/1]   2.2s latent= 4 hid=64 ep=1000 Q=quad conv=True top1= 58.1% best_T2SPE_score=-0.000
+[shard 3] done 3/8 (trial 19)
+  [AEO trial 15/1]   1.6s latent= 4 hid=32 ep=1000 Q=geom conv=True top1= 92.8% best_T2SPE_score=-0.000
+[shard 6] done 2/7 (trial 14)
+  [AEO trial 29/1]   1.5s latent= 8 hid=64 ep=1000 Q=quad conv=True top1= 65.5% best_T2SPE_score=-0.000
+[shard 4] done 4/7 (trial 28)
+  [AEO trial 28/1]   1.9s latent= 4 hid=32 ep=2000 Q=geom conv=True top1= 91.1% best_T2SPE_score=-0.002
+[shard 3] done 4/8 (trial 27)
+  [AEO trial 1/1]  14.8s latent=16 hid=32 ep=2000 Q=line conv=True top1= 74.5% best_T2SPE_score=-0.000
+[shard 0] done 1/8 (trial 0)
+  [AEO trial 8/1]  14.3s latent=16 hid=32 ep=2000 Q=quad conv=True top1= 68.1% best_T2SPE_score=-0.000
+[shard 7] done 1/7 (trial 7)
+  [AEO trial 9/1]   2.3s latent= 4 hid=16 ep=2000 Q=geom conv=True top1= 81.2% best_T2SPE_score=-0.000
+[shard 0] done 2/8 (trial 8)
+  [AEO trial 36/1]   3.5s latent= 4 hid=16 ep=4000 Q=quad conv=True top1= 99.3% best_T2SPE_score=-0.000
+[shard 3] done 5/8 (trial 35)
+  [AEO trial 17/1]   2.4s latent= 8 hid=16 ep=2000 Q=geom conv=True top1= 78.1% best_T2SPE_score=-0.000
+[shard 0] done 3/8 (trial 16)
+  [AEO trial 37/1]   7.0s latent=16 hid=64 ep=1000 Q=quad conv=True top1= 73.0% best_T2SPE_score=-0.000
+[shard 4] done 5/7 (trial 36)
+  [AEO trial 23/1]   8.3s latent=16 hid=64 ep=1000 Q=quad conv=True top1= 75.7% best_T2SPE_score=-0.000
+[shard 6] done 3/7 (trial 22)
+  [AEO trial 11/1]  11.9s latent= 8 hid=32 ep=4000 Q=line conv=True top1= 98.3% best_T2SPE_score=-0.000
+[shard 2] done 2/8 (trial 10)
+  [AEO trial 25/1]   2.5s latent=16 hid=32 ep=1000 Q=geom conv=True top1= 32.6% best_T2SPE_score=-0.000
+[shard 0] done 4/8 (trial 24)
+  [AEO trial 44/1]   5.5s latent=16 hid=64 ep=1000 Q=geom conv=True top1= 19.7% best_T2SPE_score=-0.000
+[shard 3] done 6/8 (trial 43)
+  [AEO trial 52/1]   1.9s latent=16 hid=32 ep=1000 Q=geom conv=True top1= 21.7% best_T2SPE_score=-0.000
+[shard 3] done 7/8 (trial 51)
+  [AEO trial 16/1]  13.2s latent=16 hid=64 ep=4000 Q=geom conv=True top1= 31.5% best_T2SPE_score=-0.000
+[shard 7] done 2/7 (trial 15)
+  [AEO trial 10/1]  25.8s latent=16 hid=32 ep=2000 Q=line conv=False top1= 92.5% best_T2SPE_score=-0.000
+[shard 1] done 2/8 (trial 9)
+  [AEO trial 60/1]   8.7s latent=16 hid=16 ep=1000 Q=line conv=False top1= 86.3% best_T2SPE_score=-0.000
+  [AEO trial 31/1]  13.3s latent= 8 hid=64 ep=4000 Q=line conv=True top1= 97.1% best_T2SPE_score=-0.000
+[shard 6] done 4/7 (trial 30)
+[shard 3] done 8/8 (trial 59)
+  [AEO trial 33/1]  12.7s latent=16 hid=32 ep=1000 Q=line conv=False top1= 87.2% best_T2SPE_score=-0.000
+[shard 0] done 5/8 (trial 32)
+[shard 3] 1920 rows -> /data/all20/corrected/aeo_trials_shard3.csv
+  [AEO trial 45/1]  15.0s latent= 8 hid=32 ep=4000 Q=quad conv=True top1= 64.5% best_T2SPE_score=-0.000
+[shard 4] done 6/7 (trial 44)
+  [AEO trial 18/1]   2.9s latent=16 hid=64 ep=1000 Q=geom conv=True top1= 21.8% best_T2SPE_score=-0.000  [AEO trial 41/1]   1.2s latent= 8 hid=16 ep=1000 Q=geom conv=True top1= 66.3% best_T2SPE_score=-0.000
+
+[shard 1] done 3/8 (trial 17)
+[shard 0] done 6/8 (trial 40)
+  [AEO trial 26/1]   1.2s latent= 4 hid=16 ep=1000 Q=quad conv=True top1= 98.3% best_T2SPE_score=-0.000
+[shard 1] done 4/8 (trial 25)
+  [AEO trial 39/1]   3.3s latent= 4 hid=64 ep=2000 Q=line conv=True top1= 91.9% best_T2SPE_score=-0.003
+[shard 6] done 5/7 (trial 38)
+  [AEO trial 19/1]  16.3s latent=16 hid=16 ep=4000 Q=geom conv=True top1= 20.4% best_T2SPE_score=-0.000
+[shard 2] done 3/8 (trial 18)
+  [AEO trial 47/1]   1.7s latent= 4 hid=64 ep=1000 Q=quad conv=True top1= 88.0% best_T2SPE_score=-0.000
+[shard 6] done 6/7 (trial 46)
+  [AEO trial 55/1]   1.7s latent= 4 hid=64 ep=1000 Q=line conv=True top1= 95.0% best_T2SPE_score=-0.000
+[shard 6] done 7/7 (trial 54)
+[shard 6] 1680 rows -> /data/all20/corrected/aeo_trials_shard6.csv
+  [AEO trial 24/1]  13.3s latent=16 hid=64 ep=2000 Q=quad conv=True top1= 77.3% best_T2SPE_score=-0.000
+[shard 7] done 3/7 (trial 23)
+  [AEO trial 6/1]  48.9s latent=16 hid=64 ep=4000 Q=quad conv=True top1= 91.7% best_T2SPE_score=-0.000
+[shard 5] done 1/7 (trial 5)
+  [AEO trial 49/1]  15.4s latent= 8 hid=32 ep=4000 Q=line conv=True top1= 87.7% best_T2SPE_score=-0.000
+[shard 0] done 7/8 (trial 48)
+  [AEO trial 34/1]  14.6s latent=16 hid=64 ep=2000 Q=quad conv=True top1= 71.8% best_T2SPE_score=-0.000
+[shard 1] done 5/8 (trial 33)
+  [AEO trial 14/1]   3.4s latent= 8 hid=64 ep=1000 Q=quad conv=True top1= 54.7% best_T2SPE_score=-0.000
+[shard 5] done 2/7 (trial 13)
+  [AEO trial 57/1]   1.4s latent= 4 hid=64 ep=1000 Q=quad conv=True top1= 93.1% best_T2SPE_score=-0.000
+[shard 0] done 8/8 (trial 56)
+  shard done: {'shard': 0, 'n_configs': 8, 'n_rows': 1920}
+[shard 0] 1920 rows -> /data/all20/corrected/aeo_trials_shard0.csv
+  [AEO trial 22/1]   1.7s latent= 4 hid=64 ep=1000 Q=line conv=True top1= 92.6% best_T2SPE_score=-0.000
+[shard 5] done 3/7 (trial 21)
+  [AEO trial 30/1]   1.7s latent= 4 hid=64 ep=1000 Q=geom conv=True top1= 92.1% best_T2SPE_score=-0.000
+[shard 5] done 4/7 (trial 29)
+  [AEO trial 27/1]  20.4s latent= 8 hid=64 ep=4000 Q=line conv=True top1= 74.0% best_T2SPE_score=-0.000
+[shard 2] done 4/8 (trial 26)
+  [AEO trial 38/1]   1.4s latent= 8 hid=16 ep=1000 Q=line conv=True top1= 86.8% best_T2SPE_score=-0.000
+[shard 5] done 5/7 (trial 37)
+  [AEO trial 42/1]   7.7s latent=16 hid=32 ep=2000 Q=geom conv=True top1= 34.1% best_T2SPE_score=-0.000
+[shard 1] done 6/8 (trial 41)
+  [AEO trial 46/1]   1.7s latent= 8 hid=64 ep=1000 Q=geom conv=True top1= 63.1% best_T2SPE_score=-0.000
+[shard 5] done 6/7 (trial 45)
+  [AEO trial 50/1]   1.3s latent= 8 hid=32 ep=1000 Q=quad conv=True top1= 90.7% best_T2SPE_score=-0.000
+[shard 1] done 7/8 (trial 49)
+  [AEO trial 53/1]  28.4s latent=16 hid=64 ep=4000 Q=quad conv=True top1= 61.7% best_T2SPE_score=-0.000
+[shard 4] done 7/7 (trial 52)
+[shard 4] 1680 rows -> /data/all20/corrected/aeo_trials_shard4.csv
+  [AEO trial 32/1]  23.5s latent=16 hid=32 ep=4000 Q=geom conv=True top1= 29.4% best_T2SPE_score=-0.000
+[shard 7] done 4/7 (trial 31)
+  [AEO trial 40/1]   1.4s latent= 4 hid=16 ep=1000 Q=quad conv=True top1= 99.2% best_T2SPE_score=-0.000
+[shard 7] done 5/7 (trial 39)
+  [AEO trial 35/1]  11.9s latent= 8 hid=32 ep=4000 Q=quad conv=True top1= 55.4% best_T2SPE_score=-0.000
+[shard 2] done 5/8 (trial 34)
+  [AEO trial 48/1]   3.3s latent= 8 hid=64 ep=1000 Q=quad conv=True top1= 60.0% best_T2SPE_score=-0.000
+[shard 7] done 6/7 (trial 47)
+  [AEO trial 58/1]  12.0s latent= 8 hid=64 ep=4000 Q=quad conv=True top1= 49.1% best_T2SPE_score=-0.000
+[shard 1] done 8/8 (trial 57)
+[shard 1] 1920 rows -> /data/all20/corrected/aeo_trials_shard1.csv
+  shard done: {'shard': 1, 'n_configs': 8, 'n_rows': 1920}
+  [AEO trial 56/1]   6.7s latent= 8 hid=64 ep=2000 Q=line conv=True top1= 65.5% best_T2SPE_score=-0.001
+[shard 7] done 7/7 (trial 55)
+[shard 7] 1680 rows -> /data/all20/corrected/aeo_trials_shard7.csv
+  [AEO trial 43/1]   9.9s latent=16 hid=64 ep=2000 Q=geom conv=True top1= 22.6% best_T2SPE_score=-0.000
+[shard 2] done 6/8 (trial 42)
+  [AEO trial 54/1]  21.9s latent=16 hid=16 ep=4000 Q=geom conv=True top1= 36.5% best_T2SPE_score=-0.000
+[shard 5] done 7/7 (trial 53)
+  [AEO trial 51/1]   3.4s latent= 8 hid=64 ep=2000 Q=quad conv=True top1= 89.0% best_T2SPE_score=-0.000[shard 5] 1680 rows -> /data/all20/corrected/aeo_trials_shard5.csv
+
+[shard 2] done 7/8 (trial 50)
+  [AEO trial 59/1]   5.9s latent= 8 hid=32 ep=2000 Q=geom conv=True top1= 45.7% best_T2SPE_score=-0.000
+[shard 2] done 8/8 (trial 58)
+[shard 2] 1920 rows -> /data/all20/corrected/aeo_trials_shard2.csv
+  shard done: {'shard': 2, 'n_configs': 8, 'n_rows': 1920}
+  shard done: {'shard': 3, 'n_configs': 8, 'n_rows': 1920}
+  shard done: {'shard': 4, 'n_configs': 7, 'n_rows': 1680}
+  shard done: {'shard': 5, 'n_configs': 7, 'n_rows': 1680}
+  shard done: {'shard': 6, 'n_configs': 7, 'n_rows': 1680}
+  shard done: {'shard': 7, 'n_configs': 7, 'n_rows': 1680}
+
+Step 3/3: aggregating ...
+
+
+Pull results with:
+  modal volume get tep-data all20/corrected <local_dir>
+AEO trials aggregated: 60 configs, 14400 rows
+
+=== CORRECTED ALL-20 COMPARISON (matched FAR, held-out runs) ===
+ fault_number          variant      far      mdr  delay_samples  detection_rate  balanced_accuracy
+            1           AEO-T2 0.010069 0.007679       6.285714        1.000000           0.991126
+            1       AEO-T2+SPE 0.010069 0.005179       4.285714        1.000000           0.992376
+            1 PCA-T2 (Vpc<=95) 0.010069 0.007857       6.428571        1.000000           0.991037
+            1       PCA-T2+SPE 0.010069 0.001964       1.571429        1.000000           0.993983
+            2           AEO-T2 0.010069 0.021607      19.000000        1.000000           0.984162
+            2       AEO-T2+SPE 0.010069 0.013750      11.142857        1.000000           0.988090
+            2 PCA-T2 (Vpc<=95) 0.010069 0.012143       9.714286        1.000000           0.988894
+            2       PCA-T2+SPE 0.010069 0.012321      10.142857        1.000000           0.988805
+            3           AEO-T2 0.010069 0.988393     168.000000        0.285714           0.500769
+            3       AEO-T2+SPE 0.010069 0.989286     266.000000        0.142857           0.500322
+            3 PCA-T2 (Vpc<=95) 0.010069 0.988929     248.500000        0.285714           0.500501
+            3       PCA-T2+SPE 0.010069 0.987500     322.500000        0.285714           0.501215
+            4           AEO-T2 0.010069 0.675179      22.000000        1.000000           0.657376
+            4       AEO-T2+SPE 0.010069 0.043929       2.285714        1.000000           0.973001
+            4 PCA-T2 (Vpc<=95) 0.010069 0.493750      11.142857        1.000000           0.748090
+            4       PCA-T2+SPE 0.010069 0.001607       0.571429        1.000000           0.994162
+            5           AEO-T2 0.010069 0.486964       6.000000        1.000000           0.751483
+            5       AEO-T2+SPE 0.010069 0.480893       2.428571        1.000000           0.754519
+            5 PCA-T2 (Vpc<=95) 0.010069 0.768036       0.571429        1.000000           0.610947
+            5       PCA-T2+SPE 0.010069 0.728393       0.714286        1.000000           0.630769
+            6           AEO-T2 0.010069 0.000000       0.000000        1.000000           0.994965
+            6       AEO-T2+SPE 0.010069 0.000000       0.000000        1.000000           0.994965
+            6 PCA-T2 (Vpc<=95) 0.010069 0.009107       7.428571        1.000000           0.990412
+            6       PCA-T2+SPE 0.010069 0.000000       0.000000        1.000000           0.994965
+            7           AEO-T2 0.010069 0.000000       0.000000        1.000000           0.994965
+            7       AEO-T2+SPE 0.010069 0.000179       0.000000        1.000000           0.994876
+            7 PCA-T2 (Vpc<=95) 0.010069 0.000357       0.000000        1.000000           0.994787
+            7       PCA-T2+SPE 0.010069 0.000000       0.000000        1.000000           0.994965
+            8           AEO-T2 0.010069 0.052321      30.428571        1.000000           0.968805
+            8       AEO-T2+SPE 0.010069 0.041250      30.571429        1.000000           0.974340
+            8 PCA-T2 (Vpc<=95) 0.010069 0.039821      30.571429        1.000000           0.975055
+            8       PCA-T2+SPE 0.010069 0.033750      24.714286        1.000000           0.978090
+            9           AEO-T2 0.010069 0.986607     168.000000        0.285714           0.501662
+            9       AEO-T2+SPE 0.010069 0.987321     177.000000        0.285714           0.501305
+            9 PCA-T2 (Vpc<=95) 0.010069 0.989821            NaN        0.000000           0.500055
+            9       PCA-T2+SPE 0.010069 0.988036      66.000000        0.142857           0.500947
+           10           AEO-T2 0.010069 0.652679      84.714286        1.000000           0.668626
+           10       AEO-T2+SPE 0.010069 0.528750      71.571429        1.000000           0.730590
+           10 PCA-T2 (Vpc<=95) 0.010069 0.776786     201.571429        1.000000           0.606572
+           10       PCA-T2+SPE 0.010069 0.346250      36.857143        1.000000           0.821840
+           11           AEO-T2 0.010069 0.585893      14.142857        1.000000           0.702019
+           11       AEO-T2+SPE 0.010069 0.359643       8.714286        1.000000           0.815144
+           11 PCA-T2 (Vpc<=95) 0.010069 0.480893       8.285714        1.000000           0.754519
+           11       PCA-T2+SPE 0.010069 0.295714       7.714286        1.000000           0.847108
+           12           AEO-T2 0.010069 0.033571       7.714286        1.000000           0.978180
+           12       AEO-T2+SPE 0.010069 0.016607       6.571429        1.000000           0.986662
+           12 PCA-T2 (Vpc<=95) 0.010069 0.015536       6.571429        1.000000           0.987197
+           12       PCA-T2+SPE 0.010069 0.013214       7.000000        1.000000           0.988358
+           13           AEO-T2 0.010069 0.080714      48.714286        1.000000           0.954608
+           13       AEO-T2+SPE 0.010069 0.059464      43.428571        1.000000           0.965233
+           13 PCA-T2 (Vpc<=95) 0.010069 0.059643      45.285714        1.000000           0.965144
+           13       PCA-T2+SPE 0.010069 0.051607      40.571429        1.000000           0.969162
+           14           AEO-T2 0.010069 0.013571       2.000000        1.000000           0.988180
+           14       AEO-T2+SPE 0.010069 0.000357       0.285714        1.000000           0.994787
+           14 PCA-T2 (Vpc<=95) 0.010069 0.001786       0.428571        1.000000           0.994072
+           14       PCA-T2+SPE 0.010069 0.000357       0.285714        1.000000           0.994787
+           15           AEO-T2 0.010069 0.986607     221.000000        0.285714           0.501662
+           15       AEO-T2+SPE 0.010069 0.986071     344.000000        0.285714           0.501930
+           15 PCA-T2 (Vpc<=95) 0.010069 0.986786     337.000000        0.142857           0.501572
+           15       PCA-T2+SPE 0.010069 0.985536      66.000000        0.142857           0.502197
+           16           AEO-T2 0.010069 0.775536      81.857143        1.000000           0.607197
+           16       AEO-T2+SPE 0.010069 0.761071      80.000000        1.000000           0.614430
+           16 PCA-T2 (Vpc<=95) 0.010069 0.951964     246.333333        0.857143           0.518983
+           16       PCA-T2+SPE 0.010069 0.427857      21.000000        1.000000           0.781037
+           17           AEO-T2 0.010069 0.268393      40.714286        1.000000           0.860769
+           17       AEO-T2+SPE 0.010069 0.147679      37.285714        1.000000           0.921126
+           17 PCA-T2 (Vpc<=95) 0.010069 0.229643      41.857143        1.000000           0.880144
+           17       PCA-T2+SPE 0.010069 0.082857      34.714286        1.000000           0.953537
+           18           AEO-T2 0.010069 0.078036      58.000000        1.000000           0.955947
+           18       AEO-T2+SPE 0.010069 0.066250      53.714286        1.000000           0.961840
+           18 PCA-T2 (Vpc<=95) 0.010069 0.070179      58.000000        1.000000           0.959876
+           18       PCA-T2+SPE 0.010069 0.058929      49.000000        1.000000           0.965501
+           19           AEO-T2 0.010069 0.965357     266.000000        0.142857           0.512287
+           19       AEO-T2+SPE 0.010069 0.938571     299.333333        0.857143           0.525680
+           19 PCA-T2 (Vpc<=95) 0.010069 0.913393     189.571429        1.000000           0.538269
+           19       PCA-T2+SPE 0.010069 0.768036      78.142857        1.000000           0.610947
+           20           AEO-T2 0.010069 0.653571      51.285714        1.000000           0.668180
+           20       AEO-T2+SPE 0.010069 0.626607      50.142857        1.000000           0.681662
+           20 PCA-T2 (Vpc<=95) 0.010069 0.770000      55.428571        1.000000           0.609965
+           20       PCA-T2+SPE 0.010069 0.422857      40.000000        1.000000           0.783537
+✓ App completed. View run at 
+https://modal.com/apps/liochessmag/main/ap-P8ZhtWFtBSe9zzdlL3ifVT

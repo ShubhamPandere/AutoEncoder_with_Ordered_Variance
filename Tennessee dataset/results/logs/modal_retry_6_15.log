@@ -1,0 +1,99 @@
+✓ Initialized. View run at 
+https://modal.com/apps/liochessmag/main/ap-VLY90fXx78zHamNqgmxKOE
+Building image im-bC8qin3xsXZvn7luyBLqvw
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 7.23s
+
+Built image im-bC8qin3xsXZvn7luyBLqvw in 10.08s
+
+
+✓ Created objects.
+├── 🔨 Created mount D:\Shubham\IIT Bombay\Coding\Tennesse 
+│   dataset\modal_tep_all20_pipeline.py
+├── 🔨 Created mount D:\Shubham\IIT Bombay\Coding
+├── 🔨 Created function extract_all20.
+├── 🔨 Created function run_fault_pipeline.
+└── 🔨 Created function aggregate_results.
+Running 10 retry jobs (max 8 concurrent) ...
+[fault 6 seed 0] tuning AEO ...
+[fault 6 seed 4] tuning AEO ...
+[fault 6 seed 2] tuning AEO ...
+[fault 6 seed 1] tuning AEO ...
+[fault 15 seed 0] tuning AEO ...
+[fault 6 seed 3] tuning AEO ...[fault 15 seed 1] tuning AEO ...
+
+[fault 15 seed 2] tuning AEO ...
+[fault 6] AEO best config: {'latent_dim': 4, 'epochs': 6000, 'loss_alpha': 1.6361150026389892, 'beta': 0.21397066936572556, 'gamma': 0.09680670060548682, 'lr': 0.002226062137591877, 'alpha': 0.02229602249016141, 'verbose': False}
+[fault 6] tuning PCA ...
+[fault 6] PCA best config: {'Vpc': 99, 'alpha': 0.05}
+[fault 6] higher-p = 4, Cl=11.929, cond=636.6
+[fault 6] AEO best config: {'latent_dim': 8, 'epochs': 4000, 'loss_alpha': 3.2348976368494213, 'beta': 0.836144401515874, 'gamma': 0.29820092961598216, 'lr': 0.0034193465835373913, 'alpha': 0.021260038584151805, 'verbose': False}
+[fault 6] tuning PCA ...
+[fault 6 seed 4] DONE, cond=636.6, aeo_acc=0.9889
+[fault 15 seed 3] tuning AEO ...
+[fault 6] PCA best config: {'Vpc': 99, 'alpha': 0.05}
+[fault 6] higher-p = 8, Cl=19.339, cond=2476.5
+[fault 6 seed 0] DONE, cond=2476.5, aeo_acc=0.9975
+[fault 15 seed 4] tuning AEO ...
+[fault 6] AEO best config: {'latent_dim': 8, 'epochs': 4000, 'loss_alpha': 0.7270562713272698, 'beta': 0.40370586447746115, 'gamma': 0.1270961077342321, 'lr': 0.0015408217591867171, 'alpha': 0.02327290535030737, 'verbose': False}
+[fault 6] tuning PCA ...
+[fault 6] PCA best config: {'Vpc': 99, 'alpha': 0.05}
+[fault 15] AEO best config: {'latent_dim': 4, 'epochs': 6000, 'loss_alpha': 3.806415975284648, 'beta': 0.3644483952638639, 'gamma': 0.27350014251572063, 'lr': 0.0014665660151675904, 'alpha': 0.19378467530985893, 'verbose': False}
+[fault 15] tuning PCA ...
+[fault 15] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 6] higher-p = 8, Cl=19.050, cond=5330.1
+[fault 15] higher-p = 4, Cl=6.261, cond=802.1[fault 15] AEO best config: {'latent_dim': 16, 'epochs': 2000, 'loss_alpha': 3.054597003163352, 'beta': 0.6902772507076381, 'gamma': 0.2425604960514244, 'lr': 0.0007045331934471349, 'alpha': 0.1951548329280602, 'verbose': False}
+[fault 15] tuning PCA ...
+
+[fault 6 seed 2] DONE, cond=5330.1, aeo_acc=0.9988
+[fault 15] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 15 seed 0] DONE, cond=802.1, aeo_acc=0.3773
+[fault 15] higher-p = 16, Cl=22.770, cond=266.3
+[fault 15 seed 1] DONE, cond=266.3, aeo_acc=0.2052
+[fault 6] AEO best config: {'latent_dim': 4, 'epochs': 8000, 'loss_alpha': 3.694835181243713, 'beta': 0.7227965683980139, 'gamma': 0.17080409440641753, 'lr': 0.004189943941070444, 'alpha': 0.02704884817231938, 'verbose': False}
+[fault 6] tuning PCA ...
+[fault 6] PCA best config: {'Vpc': 99, 'alpha': 0.05}
+[fault 6] higher-p = 4, Cl=11.439, cond=1179.0
+[fault 6 seed 3] DONE, cond=1179.0, aeo_acc=0.9856
+[fault 15] AEO best config: {'latent_dim': 4, 'epochs': 8000, 'loss_alpha': 0.7511552320001096, 'beta': 0.5349434407098949, 'gamma': 0.10630210394768662, 'lr': 0.0005233133861270923, 'alpha': 0.13918551813040395, 'verbose': False}
+[fault 15] tuning PCA ...
+[fault 6] AEO best config: {'latent_dim': 8, 'epochs': 8000, 'loss_alpha': 2.745500968278683, 'beta': 0.5912095607501175, 'gamma': 0.11912347247767682, 'lr': 0.0012880279477652094, 'alpha': 0.05550295040955053, 'verbose': False}
+[fault 6] tuning PCA ...
+[fault 15] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 6] PCA best config: {'Vpc': 99, 'alpha': 0.05}
+[fault 15] higher-p = 4, Cl=7.169, cond=1185.7
+[fault 15 seed 3] DONE, cond=1185.7, aeo_acc=0.3532
+[fault 6] higher-p = 8, Cl=16.208, cond=993.9
+[fault 6 seed 1] DONE, cond=993.9, aeo_acc=0.9899
+[fault 15] AEO best config: {'latent_dim': 8, 'epochs': 4000, 'loss_alpha': 2.3106172366166686, 'beta': 0.5084916643155755, 'gamma': 0.013041316216355034, 'lr': 0.004775536788785413, 'alpha': 0.19816037511351453, 'verbose': False}
+[fault 15] tuning PCA ...
+[fault 15] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 15] higher-p = 8, Cl=11.676, cond=998.6
+[fault 15 seed 4] DONE, cond=998.6, aeo_acc=0.3458
+[fault 15] AEO best config: {'latent_dim': 16, 'epochs': 8000, 'loss_alpha': 3.3522347240420514, 'beta': 0.4311077517749445, 'gamma': 0.06891685137393092, 'lr': 0.0011410260059508456, 'alpha': 0.17378665688509976, 'verbose': False}
+[fault 15] tuning PCA ...
+[fault 15] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 15] higher-p = 16, Cl=23.404, cond=448.4
+[fault 15 seed 2] DONE, cond=448.4, aeo_acc=0.2168
+
+=== Retry results (fault, seed, cond_number, aeo_accuracy_mean) ===
+fault=6 seed=0 cond=2476.5 acc=0.9975
+fault=6 seed=1 cond=993.9 acc=0.9899
+fault=6 seed=2 cond=5330.1 acc=0.9988
+fault=6 seed=3 cond=1179.0 acc=0.9856
+fault=6 seed=4 cond=636.6 acc=0.9889
+fault=15 seed=0 cond=802.1 acc=0.3773
+fault=15 seed=1 cond=266.3 acc=0.2052
+fault=15 seed=2 cond=448.4 acc=0.2168
+fault=15 seed=3 cond=1185.7 acc=0.3532
+fault=15 seed=4 cond=998.6 acc=0.3458
+Done. Pull results with:
+  modal volume get tep-data all20/results/_aggregated <local_dir>
+  modal volume get tep-data all20/results <local_dir>   # includes all plots
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/liochessmag/main/ap-VLY90fXx78zHamNqgmxKOE

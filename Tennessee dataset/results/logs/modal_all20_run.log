@@ -1,0 +1,219 @@
+✓ Initialized. View run at 
+https://modal.com/apps/liochessmag/main/ap-UkIzEZblA6tue5kROWwVzl
+Building image im-8hCGGEHLJ4TsjZmoxka7M9
+
+=> Step 0: FROM base
+
+=> Step 1: COPY . /
+Saving image...
+Image saved, took 744.43ms
+
+Built image im-8hCGGEHLJ4TsjZmoxka7M9 in 2.62s
+
+
+✓ Created objects.
+├── 🔨 Created mount D:\Shubham\IIT Bombay\Coding\Tennesse 
+│   dataset\modal_tep_all20_pipeline.py
+├── 🔨 Created mount D:\Shubham\IIT Bombay\Coding
+├── 🔨 Created function extract_all20.
+├── 🔨 Created function run_fault_pipeline.
+└── 🔨 Created function aggregate_results.
+Step 1: extracting all 20 faults x 10 runs ...
+Loading TEP_Faulty_Testing.RData ...
+faulty subset shape: (192000, 55)
+Loading TEP_FaultFree_Testing.RData ...
+combined shape: (201600, 55)
+faultNumber
+0     9600
+1     9600
+2     9600
+3     9600
+4     9600
+5     9600
+6     9600
+7     9600
+8     9600
+9     9600
+10    9600
+11    9600
+12    9600
+13    9600
+14    9600
+15    9600
+16    9600
+17    9600
+18    9600
+19    9600
+20    9600
+Name: count, dtype: int64
+Step 2: running per-fault pipeline (max 8 concurrent containers) ...
+Saved: /data/all20/tep_test_subset.csv
+[fault 1] tuning AEO ...
+[fault 2] tuning AEO ...
+[fault 3] tuning AEO ...
+[fault 7] tuning AEO ...[fault 4] tuning AEO ...
+[fault 5] tuning AEO ...[fault 6] tuning AEO ...
+
+
+[fault 8] tuning AEO ...
+[fault 8] AEO best config: {'latent_dim': 16, 'epochs': 2000, 'loss_alpha': 2.7067166862490097, 'beta': 0.1356388697282498, 'gamma': 0.18720216968535022, 'lr': 0.0014388237526938425, 'alpha': 0.03562230209908176, 'verbose': False}
+[fault 8] tuning PCA ...
+[fault 6] AEO best config: {'latent_dim': 8, 'epochs': 4000, 'loss_alpha': 3.2348976368494213, 'beta': 0.836144401515874, 'gamma': 0.29820092961598216, 'lr': 0.0034193465835373913, 'alpha': 0.021260038584151805, 'verbose': False}
+[fault 6] tuning PCA ...
+[fault 8] PCA best config: {'Vpc': 95, 'alpha': 0.1}
+[fault 6] PCA best config: {'Vpc': 99, 'alpha': 0.05}
+[fault 8] higher-p = 16, Cl=31.073, cond=58.5
+[fault 6] higher-p = 8, Cl=19.339, cond=2476.5
+[fault 2] AEO best config: {'latent_dim': 16, 'epochs': 4000, 'loss_alpha': 3.7347591377738847, 'beta': 0.4973643911449696, 'gamma': 0.21119006423864672, 'lr': 0.0006399960783311968, 'alpha': 0.029863276102258883, 'verbose': False}
+[fault 2] tuning PCA ...
+[fault 8] DONE
+[fault 9] tuning AEO ...
+[fault 6] DONE
+[fault 10] tuning AEO ...
+[fault 2] PCA best config: {'Vpc': 95, 'alpha': 0.05}
+[fault 2] higher-p = 16, Cl=31.853, cond=122.1
+[fault 2] DONE
+[fault 4] AEO best config: {'latent_dim': 4, 'epochs': 6000, 'loss_alpha': 2.7440982338775988, 'beta': 0.9421517007528084, 'gamma': 0.1787845821876433, 'lr': 0.0009264103419194285, 'alpha': 0.1866571921085327, 'verbose': False}
+[fault 4] tuning PCA ...
+[fault 11] tuning AEO ...
+[fault 4] PCA best config: {'Vpc': 99, 'alpha': 0.05}
+[fault 4] higher-p = 4, Cl=6.365, cond=1277.6
+[fault 4] DONE
+[fault 12] tuning AEO ...
+[fault 3] AEO best config: {'latent_dim': 4, 'epochs': 8000, 'loss_alpha': 1.0914555896448017, 'beta': 0.9661398348495657, 'gamma': 0.190870891150784, 'lr': 0.0020223382326432365, 'alpha': 0.19440616499519853, 'verbose': False}
+[fault 3] tuning PCA ...
+[fault 3] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 1] AEO best config: {'latent_dim': 16, 'epochs': 4000, 'loss_alpha': 3.2595004619994152, 'beta': 0.3380350878270627, 'gamma': 0.14151438794938895, 'lr': 0.0006807877015162528, 'alpha': 0.08659146742495455, 'verbose': False}
+[fault 1] tuning PCA ...
+[fault 1] PCA best config: {'Vpc': 95, 'alpha': 0.1}
+[fault 3] higher-p = 4, Cl=6.252, cond=4769.0
+[fault 3] DONE
+[fault 13] tuning AEO ...
+[fault 1] higher-p = 16, Cl=26.957, cond=136.9
+[fault 1] DONE
+[fault 14] tuning AEO ...
+[fault 7] AEO best config: {'latent_dim': 16, 'epochs': 6000, 'loss_alpha': 3.961360516886597, 'beta': 0.254543263323819, 'gamma': 0.05646148981877492, 'lr': 0.0020488473794666616, 'alpha': 0.01834898151266284, 'verbose': False}
+[fault 7] tuning PCA ...
+[fault 7] PCA best config: {'Vpc': 90, 'alpha': 0.01}
+[fault 7] higher-p = 16, Cl=33.961, cond=128.4
+[fault 7] DONE
+[fault 15] tuning AEO ...
+[fault 5] AEO best config: {'latent_dim': 16, 'epochs': 4000, 'loss_alpha': 3.7775472164470107, 'beta': 0.5783517867572022, 'gamma': 0.07963924520780498, 'lr': 0.002756713762241699, 'alpha': 0.13813404582848493, 'verbose': False}
+[fault 5] tuning PCA ...
+[fault 5] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 5] higher-p = 16, Cl=24.619, cond=5554.9
+[fault 10] AEO best config: {'latent_dim': 8, 'epochs': 2000, 'loss_alpha': 1.3712232815702372, 'beta': 0.4136834332418869, 'gamma': 0.1982329264210863, 'lr': 0.0034398045323813012, 'alpha': 0.15744606993199053, 'verbose': False}
+[fault 10] tuning PCA ...
+[fault 5] DONE
+[fault 16] tuning AEO ...
+[fault 10] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 10] higher-p = 8, Cl=12.546, cond=1270.0
+[fault 9] AEO best config: {'latent_dim': 4, 'epochs': 6000, 'loss_alpha': 2.5814122936652137, 'beta': 0.3040949408889553, 'gamma': 0.059123915786338375, 'lr': 0.0029203658536623976, 'alpha': 0.13780829799033695, 'verbose': False}
+[fault 9] tuning PCA ...
+[fault 9] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 10] DONE
+[fault 17] tuning AEO ...
+[fault 9] higher-p = 4, Cl=7.196, cond=683.8
+[fault 9] DONE
+[fault 18] tuning AEO ...
+[fault 12] AEO best config: {'latent_dim': 16, 'epochs': 2000, 'loss_alpha': 1.1604219519357746, 'beta': 0.12352097669839412, 'gamma': 0.209348892874189, 'lr': 0.0010211997097324152, 'alpha': 0.1414369202193327, 'verbose': False}
+[fault 12] tuning PCA ...
+[fault 12] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 13] AEO best config: {'latent_dim': 4, 'epochs': 6000, 'loss_alpha': 1.6224552847298657, 'beta': 0.12026378010183492, 'gamma': 0.28795581262966763, 'lr': 0.0022837119539399933, 'alpha': 0.09659876241506041, 'verbose': False}
+[fault 13] tuning PCA ...
+[fault 12] higher-p = 16, Cl=24.496, cond=94.9
+[fault 13] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 12] DONE
+[fault 13] higher-p = 4, Cl=8.148, cond=535.9
+[fault 19] tuning AEO ...
+[fault 13] DONE
+[fault 20] tuning AEO ...
+[fault 14] AEO best config: {'latent_dim': 4, 'epochs': 8000, 'loss_alpha': 1.763313333919898, 'beta': 0.7176023403029521, 'gamma': 0.25943444812925237, 'lr': 0.002189210311794989, 'alpha': 0.11418900967452963, 'verbose': False}
+[fault 14] tuning PCA ...
+[fault 14] PCA best config: {'Vpc': 95, 'alpha': 0.05}
+[fault 16] AEO best config: {'latent_dim': 4, 'epochs': 8000, 'loss_alpha': 3.4891733603442976, 'beta': 0.09208900499887057, 'gamma': 0.2427020792311122, 'lr': 0.0007651827410727806, 'alpha': 0.14216854383073288, 'verbose': False}
+[fault 16] tuning PCA ...
+[fault 16] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 14] higher-p = 4, Cl=7.702, cond=1031.5
+[fault 16] higher-p = 4, Cl=7.112, cond=202.6
+[fault 14] DONE
+[fault 16] DONE
+[fault 11] AEO best config: {'latent_dim': 16, 'epochs': 4000, 'loss_alpha': 1.6001187004634851, 'beta': 0.7591834714401401, 'gamma': 0.02160379974042517, 'lr': 0.0005839947426332112, 'alpha': 0.08676714161899718, 'verbose': False}
+[fault 11] tuning PCA ...
+[fault 11] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 15] AEO best config: {'latent_dim': 16, 'epochs': 6000, 'loss_alpha': 1.7087477642654392, 'beta': 0.4841591918284277, 'gamma': 0.2930219873431508, 'lr': 0.0030229852776385508, 'alpha': 0.17032010860015545, 'verbose': False}
+[fault 15] tuning PCA ...
+[fault 15] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 11] higher-p = 16, Cl=26.948, cond=215.6
+[fault 11] DONE
+[fault 15] higher-p = 16, Cl=23.513, cond=199912.0
+[fault 15] DONE
+[fault 17] AEO best config: {'latent_dim': 16, 'epochs': 2000, 'loss_alpha': 3.680583090347133, 'beta': 0.06635259736817925, 'gamma': 0.10012058237917587, 'lr': 0.0007418798333926594, 'alpha': 0.0751794947827385, 'verbose': False}
+[fault 17] tuning PCA ...
+[fault 17] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 17] higher-p = 16, Cl=27.637, cond=117.6
+[fault 17] DONE
+[fault 18] AEO best config: {'latent_dim': 8, 'epochs': 6000, 'loss_alpha': 2.509961017018733, 'beta': 0.4389116840067726, 'gamma': 0.21212873139385868, 'lr': 0.001703396830587305, 'alpha': 0.152998952325154, 'verbose': False}
+[fault 18] tuning PCA ...
+[fault 18] PCA best config: {'Vpc': 99, 'alpha': 0.05}
+[fault 18] higher-p = 8, Cl=12.652, cond=938.5
+[fault 18] DONE
+[fault 19] AEO best config: {'latent_dim': 8, 'epochs': 4000, 'loss_alpha': 2.3106172366166686, 'beta': 0.5084916643155755, 'gamma': 0.013041316216355034, 'lr': 0.004775536788785413, 'alpha': 0.19816037511351453, 'verbose': False}
+[fault 19] tuning PCA ...
+[fault 19] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 20] AEO best config: {'latent_dim': 4, 'epochs': 8000, 'loss_alpha': 0.8776306541809609, 'beta': 0.45929594760638986, 'gamma': 0.19377836986790922, 'lr': 0.0024911114639345937, 'alpha': 0.028120119150047418, 'verbose': False}
+[fault 20] tuning PCA ...
+[fault 19] higher-p = 8, Cl=11.676, cond=998.6
+[fault 20] PCA best config: {'Vpc': 99, 'alpha': 0.1}
+[fault 19] DONE
+[fault 20] higher-p = 4, Cl=11.341, cond=1200.6
+[fault 20] DONE
+Completed faults: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+Step 3: aggregating ...
+    fault_number        method  accuracy_mean  accuracy_std  far_mean  mdr_mean   f1_mean  delay_mean  delay_std
+0              1  AEO-higher-p       0.992477      0.002196  0.006250  0.007778  0.995471    5.888889   1.833333
+1              1           PCA       0.985648      0.003366  0.053472  0.006528  0.991410    4.444444   2.242271
+2              2  AEO-higher-p       0.981481      0.002889  0.000000  0.022222  0.988761   16.666667   3.354102
+3              2           PCA       0.986227      0.002196  0.025000  0.011528  0.991709    7.888889   2.758824
+4              3  AEO-higher-p       0.379282      0.033311  0.241667  0.696528  0.447730    5.111111   5.011099
+5              3           PCA       0.346065      0.042834  0.199306  0.744861  0.391899    6.000000   6.103278
+6              4  AEO-higher-p       0.713426      0.024063  0.203472  0.303194  0.801825    0.444444   1.333333
+7              4           PCA       0.981019      0.006501  0.112500  0.000278  0.988749    0.000000   0.000000
+8              5  AEO-higher-p       0.437269      0.058105  0.010417  0.673194  0.488000    0.333333   0.500000
+9              5           PCA       0.513889      0.062816  0.199306  0.543472  0.606888    0.000000   0.000000
+10             6  AEO-higher-p       0.997454      0.001656  0.015278  0.000000  0.998475    0.000000   0.000000
+11             6           PCA       0.976852      0.006374  0.112500  0.005278  0.986241    2.888889   1.452966
+12             7  AEO-higher-p       0.994676      0.002678  0.000000  0.006389  0.996793    0.000000   0.000000
+13             7           PCA       1.000000      0.000000  0.000000  0.000000  1.000000    0.000000   0.000000
+14             8  AEO-higher-p       0.950694      0.042642  0.001389  0.058889  0.968863   30.555556  18.775723
+15             8           PCA       0.963889      0.014620  0.053472  0.032639  0.978013   14.333333   9.987492
+16             9  AEO-higher-p       0.395486      0.052431  0.184722  0.688472  0.458813    4.444444   4.475241
+17             9           PCA       0.347338      0.046111  0.199306  0.743333  0.393510    6.555556   6.166667
+18            10  AEO-higher-p       0.630903      0.096600  0.081944  0.426528  0.714910   12.000000  14.781745
+19            10           PCA       0.613542      0.106157  0.199306  0.423889  0.705826    6.111111   6.030018
+20            11  AEO-higher-p       0.537847      0.023385  0.006250  0.553333  0.616560    7.222222   2.223611
+21            11           PCA       0.872917      0.022637  0.199306  0.112639  0.920758    3.555556   2.403701
+22            12  AEO-higher-p       0.975810      0.013915  0.006250  0.027778  0.985232    6.555556   4.034573
+23            12           PCA       0.961574      0.006820  0.199306  0.006250  0.977338    3.444444   2.697736
+24            13  AEO-higher-p       0.939236      0.021544  0.111806  0.050556  0.962844    9.666667  11.757976
+25            13           PCA       0.936806      0.017914  0.199306  0.035972  0.962107    6.333333   5.634714
+26            14  AEO-higher-p       0.918634      0.008292  0.178472  0.061944  0.950529    1.111111   1.054093
+27            14           PCA       0.995486      0.001878  0.025000  0.000417  0.997299    0.333333   0.707107
+28            15  AEO-higher-p       0.203356      0.018943  0.013889  0.953194  0.088353   53.333333  32.179186
+29            15           PCA       0.359838      0.044943  0.199306  0.728333  0.412005    6.111111   6.030018
+30            16  AEO-higher-p       0.445023      0.050863  0.104167  0.645139  0.513163    8.777778  10.568559
+31            16           PCA       0.459838      0.049094  0.199306  0.608333  0.545371    6.111111   6.030018
+32            17  AEO-higher-p       0.772917      0.017180  0.004167  0.271667  0.842258   30.888889  10.030509
+33            17           PCA       0.927431      0.007933  0.199306  0.047222  0.956290    6.555556   6.166667
+34            18  AEO-higher-p       0.939468      0.014689  0.089583  0.054722  0.962933   10.222222   8.437680
+35            18           PCA       0.936458      0.019236  0.112500  0.053750  0.961189   12.000000  14.688431
+36            19  AEO-higher-p       0.440625      0.042958  0.154861  0.640278  0.515281    2.000000   3.162278
+37            19           PCA       0.519907      0.047997  0.199306  0.536250  0.615247    3.888889   6.253888
+38            20  AEO-higher-p       0.598264      0.019320  0.111111  0.459861  0.691138   11.333333  12.419742
+39            20           PCA       0.627083      0.028043  0.199306  0.407639  0.725487    6.555556   6.166667
+Done. Pull results with:
+  modal volume get tep-data all20/results/_aggregated <local_dir>
+  modal volume get tep-data all20/results <local_dir>   # includes all plots
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/liochessmag/main/ap-UkIzEZblA6tue5kROWwVzl

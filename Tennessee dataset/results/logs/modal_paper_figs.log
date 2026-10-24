@@ -1,0 +1,98 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/liochessmag/main/ap-mYptcfyGCHfBx62g1A6kBh
+✓ Created objects.
+├── 🔨 Created mount D:\Shubham\IIT Bombay\Coding\Tennesse 
+│   dataset\modal_tep_paper_figures.py
+├── 🔨 Created mount D:\Shubham\IIT Bombay\Coding\Tennesse dataset
+├── 🔨 Created function compute_curves.
+└── 🔨 Created function make_figures.
+Step 1/2: computing curves (cached for future restyles) ...
+training 21 unique AEO configs ...
+  trial 0 done
+  trial 48 done
+  trial 17 done
+  trial 33 done
+  trial 10 done
+  trial 42 done
+  trial 58 done
+  trial 20 done
+  trial 28 done
+  trial 21 done
+  trial 7 done
+  trial 15 done
+  trial 24 done
+  trial 56 done
+  trial 1 done
+  trial 34 done
+  trial 11 done
+  trial 51 done
+  trial 37 done
+  trial 53 done
+  trial 39 done
+  curves for IDV(1)
+  curves for IDV(2)
+  curves for IDV(3)
+  curves for IDV(4)
+  curves for IDV(5)
+  curves for IDV(6)
+  curves for IDV(7)
+  curves for IDV(8)
+  curves for IDV(9)
+  curves for IDV(10)
+  curves for IDV(11)
+  curves for IDV(12)
+  curves for IDV(13)
+  curves for IDV(14)
+  curves for IDV(15)
+  curves for IDV(16)
+  curves for IDV(17)
+  curves for IDV(18)
+  curves for IDV(19)
+  curves for IDV(20)
+Step 2/2: rendering figures ...
+[CACHED] /data/all20/corrected/curves.npz (80 curves)
+[SAVED] /data/all20/corrected/figures/Fault_01/IDV01_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_01/IDV01_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_02/IDV02_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_02/IDV02_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_03/IDV03_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_03/IDV03_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_04/IDV04_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_04/IDV04_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_05/IDV05_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_05/IDV05_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_06/IDV06_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_06/IDV06_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_07/IDV07_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_07/IDV07_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_08/IDV08_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_08/IDV08_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_09/IDV09_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_09/IDV09_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_10/IDV10_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_10/IDV10_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_11/IDV11_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_11/IDV11_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_12/IDV12_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_12/IDV12_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_13/IDV13_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_13/IDV13_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_14/IDV14_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_14/IDV14_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_15/IDV15_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_15/IDV15_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_16/IDV16_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_16/IDV16_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_17/IDV17_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_17/IDV17_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_18/IDV18_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_18/IDV18_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_19/IDV19_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_19/IDV19_T2_SPE.png
+[SAVED] /data/all20/corrected/figures/Fault_20/IDV20_T2.png
+[SAVED] /data/all20/corrected/figures/Fault_20/IDV20_T2_SPE.png
+done: 40 figures (PNG + PDF) in /data/all20/corrected/figures
+Pull with: modal volume get tep-data all20/corrected/figures <local_dir>
+✓ App completed. View run at 
+https://modal.com/apps/liochessmag/main/ap-mYptcfyGCHfBx62g1A6kBh

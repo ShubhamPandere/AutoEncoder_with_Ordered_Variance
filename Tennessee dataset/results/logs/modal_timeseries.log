@@ -1,0 +1,55 @@
+Note that running a local entrypoint in detached mode only keeps the last triggered Modal function alive after the parent process has been killed or disconnected.
+✓ Initialized. View run at 
+https://modal.com/apps/liochessmag/main/ap-4cLaNS3MSk7U6tY5XpCn7P
+✓ Created objects.
+├── 🔨 Created mount D:\Shubham\IIT Bombay\Coding\Tennesse 
+│   dataset\modal_tep_corrected_timeseries.py
+├── 🔨 Created mount D:\Shubham\IIT Bombay\Coding\Tennesse dataset
+└── 🔨 Created function make_timeseries.
+training 21 unique AEO configs ...
+  trial 0 trained
+  trial 48 trained
+  trial 17 trained
+  trial 33 trained
+  trial 10 trained
+  trial 42 trained
+  trial 58 trained
+  trial 20 trained
+  trial 28 trained
+  trial 21 trained
+  trial 7 trained
+  trial 15 trained
+  trial 24 trained
+  trial 56 trained
+  trial 1 trained
+  trial 34 trained
+  trial 11 trained
+  trial 51 trained
+  trial 37 trained
+  trial 53 trained
+  trial 39 trained
+[SAVED] /data/all20/corrected/plots/timeseries_fault01.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault02.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault03.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault04.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault05.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault06.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault07.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault08.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault09.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault10.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault11.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault12.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault13.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault14.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault15.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault16.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault17.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault18.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault19.png
+[SAVED] /data/all20/corrected/plots/timeseries_fault20.png
+[SAVED] /data/all20/corrected/plots/timeseries_all20_grid.png
+done: 20 fault figures + overview grid
+Pull with: modal volume get tep-data all20/corrected/plots <local_dir>
+✓ App completed. View run at 
+https://modal.com/apps/liochessmag/main/ap-4cLaNS3MSk7U6tY5XpCn7P
